@@ -16,3 +16,5 @@ jobs:
         with:
           name: Zapiski
           path: Zapiski
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
