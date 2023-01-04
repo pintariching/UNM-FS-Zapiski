@@ -8,15 +8,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Prepare output directories
-        run: |
-          for d in */; do
-            mkdir -p output/$d
-          done
+        run: for d in */; do mkdir -p Zapiski/$d; done
+        
       - name: convert md to docx
-        uses: docker://pandoc/latex:latest
+        uses: docker://pandoc/latex:2.9
         with:
           entrypoint: /bin/sh
-          args: -c "for f in */*.md; do pandoc $f -s -o ${f%.md}.pdf; done"
+          args: -c "for f in */*.md; do pandoc $f -s -o Zapiski/${f%.md}.pdf; done"
+          
       - uses: actions/upload-artifact@master
         with:
           name: output
