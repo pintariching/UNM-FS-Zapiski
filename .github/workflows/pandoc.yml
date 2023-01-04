@@ -10,7 +10,7 @@ jobs:
 
       - uses: docker://pandoc/latex:latest
         with:
-          entrypoint: "${{ GITHUB_WORKSPACE }}/convert.sh"
+          entrypoint: "/github/workspace/convert.sh"
 
       - uses: actions/upload-artifact@master
         with:
