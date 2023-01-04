@@ -12,9 +12,4 @@ jobs:
         with:
           entrypoint: "/github/workspace/convert.sh"
 
-      - uses: actions/upload-artifact@master
-        with:
-          name: Zapiski
-          path: Zapiski
-
       - uses: stefanzweifel/git-auto-commit-action@v4
