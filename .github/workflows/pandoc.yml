@@ -5,18 +5,12 @@ on: push
 jobs:
   convert_via_pandoc:
     runs-on: ubuntu-latest
-    container:
-      image: docker://pandoc/latex:2.9
-      options: --entrypoint=sh
-
     steps:
       - uses: actions/checkout@v3
 
-      - name: Prepare output directories
-        run: for d in */; do mkdir -p Zapiski/$d; done
-
-      - name: Convert md to docx
-        run: find ./ -iwholename '*/*.md' -type f -exec sh -c 'pandoc ${0} -o Zapiski/${0%.md}.pdf' {} \;
+      - uses: docker://pandoc/latex:latest
+        with:
+          options: -v $(pwd):/data --entrypoint "/data/convert.sh"
 
       - uses: actions/upload-artifact@master
         with:
