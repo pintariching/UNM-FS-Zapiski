@@ -1,8 +1,8 @@
 name: Convert to PDF
 
 on:
-push:
-  branches: ["master"]
+  push:
+    branches: ["master"]
 
 jobs:
   convert_via_pandoc:
