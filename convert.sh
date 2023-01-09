@@ -6,4 +6,4 @@ for d in */; do
     fi
 done
 
-find ./ -maxdepth 2 -name '*.md'  -type f -exec sh -c 'pandoc ${0} -o Zapiski/${0%.md}.pdf' {} \;
+find ./ -mindepth 2 -maxdepth 2 -name '*.md'  -type f -exec sh -c 'pandoc ${0} -o Zapiski/${0%.md}.pdf' {} \;
