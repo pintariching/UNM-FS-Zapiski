@@ -35,7 +35,7 @@ Piezouporovni učinek je odvisen od raztezka ali skrčka nosilne membrane na kat
 
 To so pasivna merilna zaznavala, ki za svoje delovanje potrebujejo kontrolirano tokovno napajanje.
 
-**Imenska upornost** neobremenjenega merilnega zaznavala, je od 120 Ω do 1000 Ω.
+**Imenska upornost** neobremenjenega merilnega zaznavala, je od 120 $\Omega$ do 1000 $\Omega$.
 
 **Lastna frekvenca** zaznaval je do 60 kHz, delovno frekvenčno območje je torej do 20 kHz (cca. 1/3 območja lastne frekvence).
 
