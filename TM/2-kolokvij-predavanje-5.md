@@ -175,8 +175,11 @@ Pri vodnikih moramo paziti, da ne pride do obremenitve le-teh, saj se lahko poš
 
 ### Narišite shemo merilne verige za četrtmostično vezavo uporovnega merilnega lističa pri merjenju natezne napetosti ter zapišite in komentirajte pripadajoči merilni model.
 
+Merilni listič nalepimo tako, da je aktivna smer v smeri raztezka. Npr. če merjenec raztegujemo ali stiskamo, potem mora biti aktiva smer merilnega lističa v liniji z obremenitvijo.
+
 ![četrtmostična vezava](TM/cetrtmosticna_vezava.png){ width=8cm }
 
 ### Narišite shemo merilne verige za polmostično vezavo uporovnih merilnih lističev pri merjenju upogibnih momentov ter zapišite in komentirajte pripadajoči merilni model
 
+Merilne lističe nalepimo pod 45 stopinj.
 ![polmostična vezava](TM/polmosticna_vezava.png){ width=8cm }
