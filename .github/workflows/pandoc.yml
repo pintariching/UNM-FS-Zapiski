@@ -12,11 +12,9 @@ jobs:
         with:
           entrypoint: "/github/workspace/convert.sh"
 
-      - name: Upload Zapiski to Google Drive
-        uses: willo32/google-drive-upload-action@v1
+      - uses: actions/upload-artifact@master
         with:
-          target: "/github/workspace/Zapiski/"
-          credentials: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
-          parent_folder_id: "1gyvMOabo7vad2BjUmNSqY0Wqg49JqiZD"
+          name: Zapiski
+          path: Zapiski
 
 
