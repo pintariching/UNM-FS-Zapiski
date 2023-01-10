@@ -23,7 +23,7 @@ Delitev mehanizmov glede na način prenosa gibanja:
 
 ### Kinematika togih teles
 
-![kinematika togih teles](SE/kinematika-togih-teles.png){ width=8cm }
+![kinematika togih teles](kinematika-togih-teles.png){ width=8cm }
 
 1. Poljubno gibanje v prostoru lahko razdelimo na translacijo in rotacijo. (**Končne rotacije niso aditivne**)
 
@@ -44,7 +44,7 @@ $$
 
 3. Enačbe za čisto rotacijo:
    
-![enačbe za čisto rotaciko](SE/enacbe-za-cisto-rotacijo.png)
+![enačbe za čisto rotaciko](enacbe-za-cisto-rotacijo.png)
 
 $$
 \begin{aligned}
@@ -58,7 +58,7 @@ $$
 
 * Poseben primer je rotacija v ravnini
 
-![poseben primer rotacije](SE/poseben-primer-rotacije.png)
+![poseben primer rotacije](poseben-primer-rotacije.png)
 
 Za hitrost:
 
@@ -125,9 +125,9 @@ $$
 
 ---
 
-4. Gibanje togega telesa lahko opišem kot vsoto translacije in rotacije
+1. Gibanje togega telesa lahko opišem kot vsoto translacije in rotacije
 
-![vsota translacije in rotacije](SE/vsota-rotacije-in-translacije.png)
+![vsota translacije in rotacije](vsota-rotacije-in-translacije.png)
 
 Za toga telesa velja, da če popišemo eno točko s translacijo, potem vse ostale točke glede na to točko zgolj rotirajo!
 

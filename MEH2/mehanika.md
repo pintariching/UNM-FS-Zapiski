@@ -86,7 +86,7 @@ Opazi se, ko imamo vrteči se predmet, ki se giblje skozi tekočino. Pot predmet
 
 Na eni strani, se površina predmeta giblje hitreje kot tekočina in jo zato tik ob površini pospeši, na drugi strani pa pride do nasprotnega efekta.
 
-![magnusov efekt](MEH2/Sketch_of_Magnus_effect_with_streamlines_and_turbulent_wake.svg.png)
+![magnusov efekt](Sketch_of_Magnus_effect_with_streamlines_and_turbulent_wake.svg.png)
 
 ### Kaj je kinetična energija
 
