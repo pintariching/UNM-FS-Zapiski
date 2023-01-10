@@ -4,6 +4,10 @@ author: Tilen Pintarič
 date: 19. december 2022
 ---
 
+\maketitle
+\tableofcontents
+\newpage
+
 ### Kdaj se telo giblje?
 
 Kadar se njegova pot spreminja po času -> $v=\frac{s}{t}$

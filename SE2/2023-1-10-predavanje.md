@@ -4,6 +4,10 @@ date: 10. januar 2022
 title: Predavanje
 ---
 
+\maketitle
+\tableofcontents
+\newpage
+
 # Mehanizmi
 
 Mehanizmi so vse naprave, ki pretvarjajo gibanje.
