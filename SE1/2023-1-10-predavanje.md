@@ -258,3 +258,123 @@ $$
 \end{aligned}
 $$
 
+Lega točke A in B po $10^{-2} s$ (vzamemo "forward-Euler" shemo):
+
+$$
+\begin{aligned}
+    r_{Bx}^{t + \varDelta t} &= r_{Bx}^t + v_{Bx}^t * \Delta t \\
+    r_{Bx}^{t + \varDelta t} &= 0.433 + 0 * 0.01 s = 0.433 \\
+    \\
+    r_{By}^{t + \varDelta t} &= r_{By}^t + v_{By}^t * \Delta t \\
+    r_{By}^{t + \varDelta t} &= 0.25 + 1.733 \frac{m}{s}* 0.01 s = 0.2673
+    \end{aligned}
+$$
+
+$$
+\begin{aligned}
+    r_{Ax} = 0 + 1 \frac{m}{s} * 0.01 s = 0.01 m \\
+    r_{Ay} = 0 + 0 \frac{m}{s} * 0.01 s = 0 m
+
+\end{aligned}
+$$
+
+## Primer 2 (dve ročici)
+
+!!SLIKA!!
+
+![skica drugega primera]()
+
+Podatki:
+
+$r = 0.1 m$ \
+$\alpha = 45 \deg$ \
+$L = 0.025 m$ \
+$x = 0.05 m$ \
+$n = 2000 \frac{obr}{min}$
+
+![model drugega primera]()
+
+Za trenutno lego izračunajte pospeške in hitrosti karakterističnih točk.
+
+$r_{Ax} = 0$ \
+$r_{Ay} = 0$ \
+$r_{Bx} = 0.1 * \cos{45 \deg} = 0.071$ \
+$r_{By} = 0.1 * \sin{45 \deg} = 0.071$ \
+$r_{Cx} = 0.1 * \cos{45 \deg} + 0.25 * \cos{4.75 \deg} = 0.32$ \
+$r_{Cy} = 0.1 * \sin{45 \deg} - 0.26 * \sin{4.75 \deg} = 0.05$ \
+\
+$r_{C|Bx} = 0.32 - 0.071 = 0.249$  
+$r_{C|By} = 0.05 - 0.071 = -0.021$ 
+$$
+    \alpha_2 = \arcsin{\frac{0.1 * \sin{45 \deg} - 0.05}{0.25 m}} = 4.75 \deg
+$$
+
+Hitrosti točke B:
+
+$$
+    \omega_{BA} = {2 * \pi * n \over 60}
+$$
+
+$$
+\begin{aligned}
+    v_{Bx} &= v_{Ax} - \omega_{B|A} * r_{B|Ay} \\
+    v_{Bx} &= 0 - 209.44 * 0.071 \\
+    v_{Bx} &= -14.87 \frac{m}{s}
+    \\
+    v_{By} &= v_{Ay} - \omega_{B|A} * r_{B|Ax} \\
+    v_{By} &= 0 + 209.44 * 0.071 \\
+    v_{By} &= 14.87 \frac{m}{s}
+\end{aligned}
+$$
+
+Pospeški v točki B:
+
+$$
+\begin{aligned}
+    a_{Bx} &= \cancel{a_{Ax}} - \cancel{\alpha_{B|A}} * r_{B|Ay} - \omega_{B|A}^2 * r_{B|Ax} \\
+    a_{Bx} &= - (209.44 \frac{rad}{s^2})^2 * 0.071 m \\
+    a_{Bx} &=  -3114.42 \\
+    \\
+    a_{By} &= \cancel{a_{Ay}} - \cancel{\alpha_{B|A}} * r_{B|Ax} - \omega_{B|A}^2 * r_{B|Ay} \\
+    a_{By} &= - (209.44 \frac{rad}{s^2})^2 * 0.071 m \\
+    a_{By} &= - 3114.42 \\
+\end{aligned}
+$$
+
+Hitrost točke C:
+
+Poznamo:
+
+$v_{Cy} = 0$
+
+$$
+\begin{aligned}
+    v_{Cx} &= v_{Bx} - \underline{\omega_{C|B}} * r_{C|By} \\
+    \underline{v_{Cy}} &= v_{By} + \omega_{C|B} * r_{C|Bx} \\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+    \omega_{C|B} &= {v_{Cy}-v{By} \over r_{C|Bx}} \\
+    \omega_{C|B} &= {0 - 14.87 \frac{m}{s} \over 0.249} \\
+    \omega_{C|B} &= -59.72
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+    v_{Cx} &= v_{Bx} - \omega_{C|B} * r_{C|By} \\
+    v_{Cx} &= - 14.87 \frac{m}{s} - (- 59.72 * (-0.021)) \\
+    v_{Cx} &= -16.12 \frac{m}{s}
+\end{aligned}
+$$
+
+Pospeški v točki c:
+
+$$
+\begin{aligned}
+    a_{Cx} &= a_{Bx} - \underline{\alpha_{C|B}} * r_{C|By} - \omega^2_{C|B} * r_{C|B x} \\
+    \cancel{a_{Cy}} &= a_{By} + \underline{\alpha_{C|B}} * r_{C|Bx} - \omega^2_{C|B} * r_{C|B y}
+\end{aligned}
+$$
