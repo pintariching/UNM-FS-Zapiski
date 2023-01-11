@@ -1,7 +1,7 @@
 ---
 author: Tilen Pintarič
-date: 9. januar 2023
-title: Zapiski za 2. kolokvij - 6. predavanje
+date: 11. januar 2023
+title: Zapiski za 2. kolokvij - 7. predavanje
 ---
 
 \maketitle
@@ -101,7 +101,7 @@ V svetovnem merilu uveljavljena domača tovarna za izdelavo magnetnih inkrementa
 
 ## Vprašanja in odgovori
 
-## V čem se razlikujeta inkrementalni in absolutni kodirnik?
+### V čem se razlikujeta inkrementalni in absolutni kodirnik?
 
 Razliko med inkrementalnim in absolutnim kodirnikom lahko pojasnimo kot razliko med štoparico in uro.
 
@@ -113,7 +113,7 @@ Podobno kot pri štoparici inkrementalni kodirnik kaže relativni položaj in sm
 
 Rotacijski inkrementalni kodirniki imajo posebne oznake ali reže na merilni lestvici ali kodnem kolesu, ki so enakomerno razmaknjene.
 
-## Katere so splošne značilnosti absolutnih kodirnikov?
+### Katere so splošne značilnosti absolutnih kodirnikov?
 
 Glavna prednost absolutnega kodirnika je, da se po vklopu napajanja takoj pridobi informacija o trenutnem položaju merjenca.
 
@@ -127,7 +127,7 @@ Kodirniki so zato pogosto montirani kar na gred pogonskega motorja, lahko pa so 
 
 Absolutni kodirniki so bolj zanesljivi ter tudi dražji od inkrementalnih, zato jih uporabljamo tam kjer so meritve pomika lahko odločilnega pomena npr. v sistemih za zagotavljanje življenjske varnosti ljudi in premoženja.
 
-## Kakšna je razlika med magnetnim in optičnim kodirnikom?
+### Kakšna je razlika med magnetnim in optičnim kodirnikom?
 
 Razlika med magnetnimi in optičnimi kodirniki je v načinu, kako kodirniki prepoznajo in obdelujejo različna kodiranja ali oznake.
 
