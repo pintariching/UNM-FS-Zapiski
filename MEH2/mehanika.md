@@ -4,6 +4,10 @@ author: Tilen Pintarič
 date: 19. december 2022
 ---
 
+\maketitle
+\tableofcontents
+\newpage
+
 ### Kdaj se telo giblje?
 
 Kadar se njegova pot spreminja po času -> $v=\frac{s}{t}$
@@ -86,7 +90,7 @@ Opazi se, ko imamo vrteči se predmet, ki se giblje skozi tekočino. Pot predmet
 
 Na eni strani, se površina predmeta giblje hitreje kot tekočina in jo zato tik ob površini pospeši, na drugi strani pa pride do nasprotnega efekta.
 
-![magnusov efekt](MEH2/Sketch_of_Magnus_effect_with_streamlines_and_turbulent_wake.svg.png)
+![magnusov efekt](Sketch_of_Magnus_effect_with_streamlines_and_turbulent_wake.svg.png)
 
 ### Kaj je kinetična energija
 

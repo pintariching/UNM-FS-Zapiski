@@ -1,9 +1,16 @@
 #! /bin/sh
 
-for d in */; do 
+for d in */; do
     if [ "$d" != "Zapiski/" ]; then
         mkdir -p Zapiski/$d
+        
+        cd $d
+
+        for f in *.md; do
+            pandoc $f -o ../Zapiski/$d${f%.md}.pdf
+            echo "../Zapiski/$d${f%.md}.pdf"
+        done
+
+        cd ..
     fi
 done
-
-find ./ -mindepth 2 -maxdepth 2 -name '*.md'  -type f -exec sh -c 'pandoc ${0} -o Zapiski/${0%.md}.pdf' {} \;
