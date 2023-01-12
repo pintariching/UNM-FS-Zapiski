@@ -7,7 +7,7 @@ for d in */; do
         cd $d
 
         for f in *.md; do
-            pandoc $f -o ../Zapiski/$d${f%.md}.pdf
+            pandoc -f markdown-implicit_figures $f -o ../Zapiski/$d${f%.md}.pdf
             echo "../Zapiski/$d${f%.md}.pdf"
         done
 
