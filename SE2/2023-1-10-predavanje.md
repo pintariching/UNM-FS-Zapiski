@@ -2,6 +2,8 @@
 author: Tilen Pintarič
 date: 10. januar 2022
 title: Predavanje
+header-includes:
+- \usepackage{ulem}
 ---
 
 \maketitle
@@ -38,9 +40,9 @@ Delitev mehanizmov glede na način prenosa gibanja:
 
 $$
 \begin{aligned}
-\vec{r_B} &= \vec{r_B} + \vec{r_{B|A}} \\
-\vec{v_B} &= \vec{v_A} \\
-\vec{a_A} &= \vec{a_A} \\
+    \vec{r_B} &= \vec{r_B} + \vec{r_{B|A}} \\
+    \vec{v_B} &= \vec{v_A} \\
+    \vec{a_A} &= \vec{a_A}
 \end{aligned}
 $$
 
@@ -278,7 +280,6 @@ $$
 \begin{aligned}
     r_{Ax} = 0 + 1 \frac{m}{s} * 0.01 s = 0.01 m \\
     r_{Ay} = 0 + 0 \frac{m}{s} * 0.01 s = 0 m
-
 \end{aligned}
 $$
 
@@ -335,11 +336,11 @@ Pospeški v točki B:
 
 $$
 \begin{aligned}
-    a_{Bx} &= \cancel{a_{Ax}} - \cancel{\alpha_{B|A}} * r_{B|Ay} - \omega_{B|A}^2 * r_{B|Ax} \\
+    a_{Bx} &= \sout{a_{Ax}} - \sout{\alpha_{B|A}} * r_{B|Ay} - \omega_{B|A}^2 * r_{B|Ax} \\
     a_{Bx} &= - (209.44 \frac{rad}{s^2})^2 * 0.071 m \\
     a_{Bx} &=  -3114.42 \\
     \\
-    a_{By} &= \cancel{a_{Ay}} - \cancel{\alpha_{B|A}} * r_{B|Ax} - \omega_{B|A}^2 * r_{B|Ay} \\
+    a_{By} &= \sout{a_{Ay}} - \sout{\alpha_{B|A}} * r_{B|Ax} - \omega_{B|A}^2 * r_{B|Ay} \\
     a_{By} &= - (209.44 \frac{rad}{s^2})^2 * 0.071 m \\
     a_{By} &= - 3114.42 \\
 \end{aligned}
@@ -379,6 +380,6 @@ Pospeški v točki c:
 $$
 \begin{aligned}
     a_{Cx} &= a_{Bx} - \underline{\alpha_{C|B}} * r_{C|By} - \omega^2_{C|B} * r_{C|B x} \\
-    \cancel{a_{Cy}} &= a_{By} + \underline{\alpha_{C|B}} * r_{C|Bx} - \omega^2_{C|B} * r_{C|B y}
+    \sout{a_{Cy}} &= a_{By} + \underline{\alpha_{C|B}} * r_{C|Bx} - \omega^2_{C|B} * r_{C|B y}
 \end{aligned}
 $$
