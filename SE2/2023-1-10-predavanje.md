@@ -293,7 +293,7 @@ Podatki:
 
 $r = 0.1 m$ \
 $\alpha = 45 \deg$ \
-$L = 0.025 m$ \
+$L = 0.25 m$ \
 $x = 0.05 m$ \
 $n = 2000 \frac{obr}{min}$
 
