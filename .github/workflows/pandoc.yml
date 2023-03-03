@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: docker://pandoc/latex:latest
+      - uses: docker://pintarichingg/pandoc-latex:edge-alpine
         with:
           entrypoint: "/github/workspace/convert.sh"
 
