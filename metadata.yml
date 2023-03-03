@@ -1,0 +1,3 @@
+header-includes:
+    - \usepackage{cancel}
+numbersections: true

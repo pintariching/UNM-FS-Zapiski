@@ -8,7 +8,7 @@ for d in */; do
 
         for f in *.md; do
             echo "../Zapiski/$d${f%.md}.pdf"
-            pandoc -f markdown-implicit_figures  $f -o ../Zapiski/$d${f%.md}.pdf
+            pandoc --metadata-file=../metadata.yml $f -o ../Zapiski/$d${f%.md}.pdf
         done
 
         cd ..
